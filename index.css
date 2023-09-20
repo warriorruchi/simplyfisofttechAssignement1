@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Lato', sans-serif;
+}
+
+.firstDiv{
+    height: 550px;
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 54, 54);
+}
+
+.secondDiv {
+    width: 200px; 
+    height: 200px; 
+    transform: rotate(45deg); 
+    border-top: 25px solid rgb(223, 124, 88);
+    border-right: 25px solid rgb(196, 189, 170);
+    border-bottom: 25px solid rgb(96, 157, 217); 
+    border-left: 25px solid rgb(165, 214, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.thirdDiv {
+    transform: rotate(-45deg); 
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.thirdDiv h1 {
+    margin: 0;
+}
+
+.thirdDiv p {
+    margin: 0;
+    font-size:14px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .firstDiv {
+        height: 400px; 
+        width: 320px; 
+    }
+
+    .secondDiv {
+        width: 150px;
+        height: 150px; 
+        border-width: 15px; 
+    }
+
+    .thirdDiv {
+        font-size: 12px; 
+    }
+}
